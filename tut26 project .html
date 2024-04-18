@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thakur Fitness </title>
+
+</head>
+<link rel="stylesheet" href="css/26style.css">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        /* box-sizing: border-box; */
+        /* background: url('img/bg.png' ) center center no-repeat ;
+        background-position:center;
+        background-size: cover; */
+        color: rgb(255, 255, 255);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* flex-wrap: wrap; */
+
+    }
+
+    /* i am the left */
+    .left {
+        background: url('img/b1.jpg');
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: -5px;
+        text-align: center;
+        font-size: 24px;
+        /* font-size: 24em; */
+
+    }
+
+    .left img {
+        width: 120px;
+        filter: invert(100%);
+
+    }
+
+    .left1 {
+        position: relative;
+        top: -30px;
+    }
+
+    /* i am the mid */
+    .mid {
+        /* border: 2px solid rgb(0, 138, 132); */
+        display: block;
+        width: 580px;
+        margin: 22px auto;
+        position: relative;
+        top: -562px;
+    }
+    
+    .navbar {
+        display: inline-block;
+        
+        /* width: 600px; */
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        padding: 34px 23px;
+        text-decoration: none;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(55, 255, 0);
+        /* text-decoration: underline; */
+
+    }
+
+    /* i am the right */
+    .right {
+        /* border: 2px solid rgb(0, 255, 128); */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 22px;
+        padding: 10px;
+    }
+
+    .btn {
+        background: transparent;
+        color: white;
+        padding: 4px 10px;
+        margin: 3px 9px;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .btn:hover {
+        color: rgb(0, 255, 21);
+        background-color: rgb(0, 0, 0);
+    }
+
+    /* ye mera form h  */
+    .container {
+        /* border: 2px solid rgb(14, 187, 123); */
+        width: 45%;
+        display: block;
+        margin: 60px auto;
+        padding: 3px 3px;
+        text-align: center;
+        position: relative;
+        top: -592px;
+        left:500px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px;
+        border: 2px solid rgb(0, 247, 255);
+        margin: 12px auto;
+        border-radius: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* position: relative;
+        top: 50px; */
+    }
+
+    #btn1 {
+        display: block;
+        width: 300px;
+        margin: 25px auto;
+    }
+
+    .container1 {
+        position: relative;
+        left: -240px;
+        top: 33px;
+    }
+
+    .container2 img{
+        display: inline-block;
+        width: 1280px;
+height: 560px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div class="container2">
+        <img src="img/bg.png" alt="">
+    </div>
+    <header class="header">
+        <!-- lef box for logo -->
+        <div class="left">
+            <img src="img/b1.png" alt="">
+            <div class="left1">Thakur Fitness </div>
+
+        </div>
+
+        <div class="mid">
+            <!-- i am mid -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+    <div class="container1">
+        <div class="container">
+            <h1> Join The best Gym of Sumerpur Now</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="Name" id="" placeholder="Enter Your Name">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Locallity">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Enter Your phone">
+                </div>
+                <button class="btn" id="btn1">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

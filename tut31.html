@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+<style>
+    h1{
+        background-color: aqua;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* if p is container by li which is container by div */
+    /* div p{
+        color: rgb(255, 153, 0); NOTE>..  div ke ander khi par bhi p ho ush par aplay ho jaygi  
+        font-weight: bold;
+        background-color: aqua;
+    } */
+
+    /* if p is right inside div then this CSS will be applied */
+    /*  div > p{
+        color: rgb(255, 153, 0);NOTE>.. div ke ander jo dayrkt chaild <p> bash ushi par Aplay hogi
+        font-weight: bold;
+        background-color: aqua;
+    } */
+
+    /* if p is right after div i.e p is the next sibling of div */
+    div + p{
+        color: rgb(0, 0, 0);
+        background-color: rgb(26, 255, 0);  /*  ishme div ke jusht bad jo p h ushi par Aplay hogi */
+        font-weight: bold ;
+    }
+</style> 
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+            </ul>
+          <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this a outermost paragraph</p>
+</body>
+</html> 

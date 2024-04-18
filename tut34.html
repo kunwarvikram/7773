@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow & text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding:20px 12px ;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: rgb(82, 82, 99);
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread radius color; */
+           /* box-shadow: 10px 13px 19px rgb(13, 255, 0); box-shadow: 10px(bottam) -10(top) 13px(raith) -10px(raith)  19px(blure-redues) rgb(color) ;*/
+           /* box-shadow: 10px 13px 19px 10px rgb(13, 255, 0);/* box-shadow: 10px 13px 19px 10px(spret-reduas) jitna chahe utna shadow ko fela skte h*/
+            /* box-shadow: inset 10px 10px 10px chartreuse,; shdow ko insaid kar dega */
+            box-shadow: inset 10px 10px 10px chartreuse,10px 10px 10px coral; /* shadow ko multipal kar dega */
+        }
+        .card h2{
+            text-shadow:3px 3px 2px rgb(0, 255, 13);/* text shadow */
+        }
+        header::before{
+            background: url('img/giphy.gif') center center no-repeat ;
+            content:'';
+            height:100%;
+            width: 50%;
+         position: absolute;
+         left: 355px;
+        align-items: center;
+        justify-content: center;
+         z-index: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <div class="card" id="card-1">
+                <h2>this is c++ course</h2>
+               i have started c++ corse which not mean that we willnstop this corse . we will continue this course to completion. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quaerat dolores voluptatem tempore, dolorem incidunt exercitationem, ratione soluta doloribus modi, deleniti iure at! Ab alias, nostrum natus voluptatum officia soluta temporibus dolores labore praesentium.
+            </div>
+            <div class="card" id="card-2">
+               <h2>this is html course</h2>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quia quae. Expedita veniam dicta fugiat corrupti atque rerum alias nesciunt voluptas fugit! Laborum optio eveniet soluta facilis sit facere veritatis iusto porro? Nobis, necessitatibus.
+            </div>
+            <div class="card" id="card-3">
+                <h2>end all wej js.</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut illo excepturi, aperiam labore facilis illum porro voluptas et tempore earum voluptatem necessitatibus a harum blanditiis quas id, deleniti sapiente quo magnam aliquid officiis asperiores.34
+            </div>
+        </div>
+    </header>
+</body>
+</html>

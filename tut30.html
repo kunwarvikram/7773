@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            display: none;
+        }
+        @media(max-width:500px){
+            #box1{
+                display: block;
+            }
+        }
+        @media(min-width:300px)and (max-width:500px)     
+        {
+            #box2{
+                display: block;
+                margin: 5px;
+                background-color: blue;
+         }
+        }
+
+        @media(min-width:500px)and (max-width:1000px)     
+        {
+            #box3{
+                display: block;
+                margin: 5px;
+                background-color: rgb(255, 128, 0);
+            }
+        }       
+
+        @media(min-width:1000px)  {
+            #box4{
+                display: block;
+                margin: 5px;
+                background-color: rgb(0, 255, 26);
+            }
+        }       
+    
+    
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">me ek i phone hoon</div>
+    <div class="box" id="box2">me rk teblet hoon</div>
+    <div class="box" id="box3">me ek destop computer hoon</div>
+    <div class="box" id="box4">me ek with computer hoon</div>
+</body>
+</html>
